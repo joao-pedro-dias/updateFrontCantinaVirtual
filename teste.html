@@ -1,49 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="teste.css" rel="stylesheet">
-    <link href="css/bootstrap.css" rel="stylesheet">
-
-    <title>Document</title>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <div class="container-fluid px-1 px-md-4 py-5 mx-auto">
-        <div class="row d-flex justify-content-center">
-            <div class="col-12 col-md-11 col-lg-10 col-xl-9">
-                <div class="card card0 border-0">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="card card00 m-2 border-0">
-                                <div class="row text-center justify-content-center px-3">
-                                    <h3 class="mt-4">Como funciona?</h3>
-                                </div>
-                                <div class="d-flex flex-md-row px-3 mt-4 flex-column-reverse">
-                                    <div class="col-md-6">
-                                        <div class="card1">
-                                            <ul id="progressbar" class="text-center">
-                                                <li class="active step0"></li>
-                                                <li class="step0"></li>
-                                                <li class="step0"></li>
-                                                <li class="step0"></li>
-                                            </ul>
-                                            <h6 class="mb-5">Crie sua conta</h6>
-                                            <p>Basta preencher o formulário de cadastro com algumas informações que serão úteis para realização do pedido. Se ja criou sua conta apenas entre com seu e-mail e senha.</p>
-                                            <h6 class="mb-5">Set password</h6>
-                                            <h6 class="mb-5">Select your country</h6>
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">WebSiteName</a>
     </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Page 1-1</a></li>
+            <li><a href="#">Page 1-2</a></li>
+            <li><a href="#">Page 1-3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Page 2</a></li>
+        <li><a href="#">Page 3</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<div class="container">
+  <h3>Collapsible Navbar</h3>
+  <p>In this example, the navigation bar is hidden on small screens and replaced by a button in the top right corner (try to re-size this window).
+  <p>Only when the button is clicked, the navigation bar will be displayed.</p>
+</div>
+
 </body>
 </html>
